@@ -9,11 +9,7 @@ class LSB {
 
     BufferedImage getImageBuffer() throws IOException {
         BufferedImage img = null;
-        try {
-            img = ImageIO.read(new File("img.bmp"));
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
+        img = ImageIO.read(new File("img.bmp"));
         return img;
     }
 
